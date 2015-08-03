@@ -6,21 +6,27 @@ Wishlist is a site you go to to make your wishes come true.  It allows you to cr
 
 Stakeholders = developers & GA instructors
 
-User Stories
+### User Stories
 
-High Priority:
-1) I need a way to login to the site.
-2) I need to create my list of wants
-3) I need to create my list of haves
-4) I need to be able to edit and delete items off my list of haves and wants.
-5) I need see a list of potential matches
-6) I need a way to connect to my match
+**High Priority:**
+1. I need a way to login to the site.
+2. I need to create my list of wants
+3. I need to create my list of haves
+4. I need to be able to edit and delete items off my list of haves and wants.
+5. I need see a list of potential matches
+6. I need a way to connect to my match
 
-Medium Priority:
-1) I want to delete matches if it's not really want I'm looking for
-2) I want to be able to add more attributes to refine my wants and haves
+**Medium Priority:**
+1. I want to delete matches if it's not really want I'm looking for
+2. I want to be able to add more attributes to refine my wants and haves
 
-Low Priority:
-1) I want to be able to refine my search query to a specific geographic area
-2) I would like a way to reduce error by handling exceptions (i.e. bicycle != bike)
-3) I would like to add photos to the items on my list
+**Low Priority:**
+1. I want to be able to refine my search query to a specific geographic area
+2. I would like a way to reduce error by handling exceptions (i.e. bicycle != bike)
+3. I would like to add photos to the items on my list
+
+**Wireframe**
+![Image of website](wireframe.jpg)
+
+**Models**
+![Image of database](database.png)
