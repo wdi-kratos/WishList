@@ -1,0 +1,14 @@
+<h1>Edit Student of ID <%= @student.id %></h1>
+
+<form action="/students/edit" method="post">
+  <input type="hidden" name="id" value='<%= @student.id %>'>
+  <input type="text" name="name" value='<%= @student.name %>'>
+  <input type="text" name="email" value='<%= @student.email %>'>
+  <input type="submit" value="Edit Student">
+
+</form>
+
+<form action="/students/delete" method="post">
+  <input type="hidden" name="id" value='<%= @student.id %>'>
+  <input type="submit" value="Delete Student">
+</form>
