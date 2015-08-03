@@ -9,7 +9,7 @@ Stakeholders = developers & GA instructors
 ### User Stories
 
 **High Priority:**
-1. I need a way to login to the site.
+1. I need a way to login to the site
 2. I need to create my list of wants
 3. I need to create my list of haves
 4. I need to be able to edit and delete items off my list of haves and wants.
@@ -27,6 +27,7 @@ Stakeholders = developers & GA instructors
 
 **Wireframe**
 ![Image of website](wireframe.jpg)
+![Image of dashboard](dashboard.jpg)
 
 **Models**
 ![Image of database](database.png)
