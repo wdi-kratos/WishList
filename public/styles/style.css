@@ -46,6 +46,7 @@ html, body {
 .button1 {
   background-color: rgb(227, 73, 73);
   font-family: Strait;
+  color: white;
   font-size:2.8vw;
   margin-top: 45%;
   margin-bottom: 5%;
@@ -54,12 +55,12 @@ html, body {
   margin-right:;
   padding-top:;
   padding-bottom:;
-  border: solid 2px black;
 }
 
 .button2 {
   background-color: rgb(227, 73, 73);
   font-family: Strait;
+  color: white;
   font-size: 2.8vw;
   margin-top: 45%;
   margin-left:1%;
@@ -67,7 +68,6 @@ html, body {
   width: 40%;
   padding-top:;
   padding-bottom:;
-  border: solid 2px black;
 }
 
 /*BELOW IS THE CSS FOR USERS_REGISTER.ERB*/
