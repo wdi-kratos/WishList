@@ -8,6 +8,7 @@ html, body {
     margin-right:0px;
     margin-bottom:0px;
     margin-left: 0px;
+    background-color: rgb(255, 255, 255);
   }
 
   /*BELOW IS CSS FOR WELCOME PAGE*/
@@ -31,26 +32,105 @@ html, body {
     background-color: black;
     width: 100%;
     z-index:;
-    margin-bottom: -45%;
+    margin-bottom: -44%;
   }
 
   .logophoto {
     position: absolute;
-    width: 61%;
+    width: 60%;
     height: auto;
-    margin-left: 24.5%;
+    margin-left: 23.5%;
     margin-bottom: 20%;
 }
 
 .button1 {
-  font-size:;
-  margin-top: 42%;
+  background-color: rgb(227, 73, 73);
+  font-family: Strait;
+  font-size:2.8vw;
+  margin-top: 45%;
   margin-bottom: 5%;
-  width: 45%;
-  margin-left: 5%;
+  width: 40%;
+  margin-left: 10%;
+  margin-right:;
+  padding-top:;
+  padding-bottom:;
+  border: solid 2px black;
 }
 
 .button2 {
-  margin-top: 42%;
-  width: 45%;
+  background-color: rgb(227, 73, 73);
+  font-family: Strait;
+  font-size: 2.8vw;
+  margin-top: 45%;
+  margin-left:1%;
+  margin-right: 8%;
+  width: 40%;
+  padding-top:;
+  padding-bottom:;
+  border: solid 2px black;
+}
+
+/*BELOW IS THE CSS FOR USERS_REGISTER.ERB*/
+
+.registerLogo {
+  width: 50%;
+  height: auto;
+  margin-left: 27%;
+}
+.signup{
+  color: rgb(227, 73, 73);
+  font-family: Strait;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.formbox {
+  width: 40%;
+  height: auto;
+  background-color: rgba(19, 0, 0, 0.05);
+  margin-left: 30%;
+}
+
+.form1 {
+  font-size: 2vw;
+  font-family: Strait;
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  margin-left:5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+
+}
+
+.form2 {
+  font-size: 2vw;
+  font-family: Strait;
+  width: 90%;
+  margin-bottom: 4%;
+  margin-left:5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+
+.form3 {
+  font-size: 2vw;
+  font-family: Strait;
+  width: 90%;
+  margin-bottom: 4%;
+  margin-left:5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+.form4 {
+  font-size: 2vw;
+  background-color: rgb(227, 73, 73);
+  color: white;
+  font-family: Strait;
+  width: 90%;
+  margin-bottom: 5%;
+  margin-left:5%;
 }
