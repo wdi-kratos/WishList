@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
 
   # set folder for templates to ../views, but make the path absolute
   set :views, File.expand_path('../../views', __FILE__)
-  set :public_dir, File.expand_path('../../public_dir',__FILE__)
+  set :public, File.expand_path('../../public',__FILE__)
 
   # don't enable logging when running tests
   # configure :production, :development do
