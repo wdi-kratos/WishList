@@ -8,17 +8,18 @@ Stakeholders = developers & GA instructors
 
 ### User Stories
 
-**High Priority:**
+**High Priority: (required project scope)**
 * I need a way to login to the site
 * I need to create my list of wants
 * I need to create my list of haves
 * I need to be able to edit and delete items off my list of haves and wants.
-* I need see a list of potential matches
-* I need a way to connect to my match
+
 
 **Medium Priority:**
 * I want to delete matches if it's not really want I'm looking for
 * I want to be able to add more attributes to refine my wants and haves
+* I need see a list of potential matches
+* I need a way to connect to my match
 
 **Low Priority:**
 * I want to be able to refine my search query to a specific geographic area
