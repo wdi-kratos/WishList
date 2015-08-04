@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    min-height: auto;
+    margin-top:0px;
+    margin-right:0px;
+    margin-bottom:0px;
+    margin-left: 0px;
+  }
+
+  /*BELOW IS CSS FOR WELCOME PAGE*/
+  .welcometext {
+    font-family: Syncopate;
+    font-size: 5vw;
+    color: gray;
+    margin-bottom:-20px;
+    z-index:99;
+    position: absolute;
+  }
+
+  .photo {
+    width: 100%;
+    z-index:;
+    opacity: .3;
+    padding: -1px;
+  }
+
+  .derphoto {
+    background-color: black;
+    width: 100%;
+    z-index:;
+    margin-bottom: -45%;
+  }
+
+  .logophoto {
+    position: absolute;
+    width: 61%;
+    height: auto;
+    margin-left: 24.5%;
+    margin-bottom: 20%;
+}
+
+.button1 {
+  font-size:;
+  margin-top: 42%;
+  margin-bottom: 5%;
+  width: 45%;
+  margin-left: 5%;
+}
+
+.button2 {
+  margin-top: 42%;
+  width: 45%;
+}

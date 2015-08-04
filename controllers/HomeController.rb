@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   get '/' do
-    erb :index
+    erb :welcome
   end
 
   get '/not_authenticated' do
