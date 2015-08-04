@@ -1,10 +1,46 @@
-<h1>Create Item</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Item</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h1>Create Item</h1>
+    <!-- Enter dropdown menu for the category -->
 
-<form action="" method="post">
+    <div class="container">
+      <h2>Select your Category</h2>
+      <p>Click on the dropdown button to select your category.</p>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+        </ul>
+      </div>
+    </div>
 
-  <input type="text" name="name" placeholder="Your name?">
-  <input type="text" name="email" placeholder="you@aol.com">
+    <form action="" method="post">
 
-  <input type="submit" value="Create Item">
+      <input type="text" name="title" placeholder="Title">
+      <input type="text" name="description" placeholder="Description">
+      <input type="text" name="color" value="color?">
+      <input type="text" name="size" value="size?">
+      <input type="text" name="condition" value="condition?">
+      <input type="text" name="location" value="location?">
+      <input type="submit" value="Create Item">
 
-</form>
+    </form>
+
+
+
+
+  </body>
+</html>
