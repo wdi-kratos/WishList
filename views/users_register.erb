@@ -1,12 +1,24 @@
-<h3>Register</h3>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WishList</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Syncopate|Contrail+One|Strait' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <img class="registerLogo" src="/images/logo-final.png" alt="" />
+    </header>
+    <h2 class="signup">Sign-up below for new user</h2>
+    <div class="formbox">
+      <form action="/users/register" method="post">
+        <input class="form1" type="text" name="user_name" placeholder="user name" required><br>
+        <input class="form2" type="email" name="user_email" placeholder="user email" required><br>
+        <input class="form3" type="password" name="password" placeholder="user password" required><br>
+        <input class="form4" type="submit" value="Register Account" required><br>
+      </form>
+    </div>
 
-<p>
-  Welcome! Please register an account!
-</p>
-
-<form action="/users/register" method="post">
-  <input type="text" name="user_name" placeholder="username" required>
-  <input type="email" name="user_email" placeholder="myself@somewhere.org" required>
-  <input type="password" name="password" placeholder="Your password" required>
-  <input type="submit" value="Register Account" required>
-</form>
+  </body>
+</html>
