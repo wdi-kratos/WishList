@@ -1,0 +1,17 @@
+<h1>Edit Item of ID <%= @item.id %></h1>
+
+<form action="/items/edit" method="post">
+  <input type="hidden" name="id" value='<%= @item.id %>'>
+  <input type="text" name="title" value='<%= @item.title %>'>
+  <input type="text" name="description" value='<%= @item.description %>'>
+  <input type="text" name="color" value='<%= @item.color %>'>
+  <input type="text" name="size" value='<%= @item.size %>'>
+  <input type="text" name="condition" value='<%= @item.condition %>'>
+  <input type="text" name="location" value='<%= @item.location %>'>
+  <input type="submit" value="Edit Item">
+</form>
+
+<form action="/items/delete" method="post">
+  <input type="hidden" name="id" value='<%= @item.id %>'>
+  <input type="submit" value="Delete Item">
+</form>
