@@ -16,9 +16,11 @@ class UsersController < ApplicationController
   end
 
   post "/register" do
+    @message = ''
 
     if self.does_user_exist(params[:user_name]) == true
-      erb :users_already_exists
+      @message = 'The username you selected already exists. Please try again'
+      erb :user_notification
     end
 
     # generate a salt and hash to use
@@ -34,8 +36,9 @@ class UsersController < ApplicationController
     new_user.save
 
     session[:current_user] = user
+    @message = 'Congrats!  Your account has been registered.'
 
-    erb :users_register_confirmation
+    erb :user_notification
 
   end
 
@@ -45,6 +48,7 @@ class UsersController < ApplicationController
   end
 
   post "/login" do
+    @message = ''
     if self.does_user_exist(params[:user_name]) == true
       user = UsersModel.where(:user_name => params[:user_name]).first!
       if user.password_hash == BCrypt::Engine.hash_secret(params[:password], user.password_salt)
@@ -52,7 +56,8 @@ class UsersController < ApplicationController
         redirect "/"
       end
     end
-    erb :users_login_error
+    @message = 'A login error has occured. Please try again.'
+    erb :user_notification
   end
 
   get "/logout" do

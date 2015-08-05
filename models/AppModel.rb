@@ -1,8 +1,8 @@
 
-class Items < ActiveRecord::Base
+class ItemsModel < ActiveRecord::Base
   self.table_name = 'items'
 end
 
-class Attributes < ActiveRecord::Base
+class AttributesModel < ActiveRecord::Base
   self.table_name = 'attributes'
 end

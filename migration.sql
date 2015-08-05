@@ -11,8 +11,8 @@ CREATE TABLE items (itemID SERIAL PRIMARY KEY, userID INTEGER REFERENCES users(u
 CREATE TABLE attributes (attrID SERIAL PRIMARY KEY, itemID INTEGER REFERENCES items(itemID), color VARCHAR(255), size VARCHAR(255), condition VARCHAR(255), location VARCHAR(255));
 
 
--- CREATE TABLE item_SubCategory (itemID int, SubCategoryID int)
--- CREATE TABLE SubCategory (SubCategoryID int, CategoryID int, Description VARCHAR (100))
+-- CREATE TABLE item_SubCategory (itemID INT, SubCategoryID INT)
+-- CREATE TABLE SubCategory (SubCategoryID INT, CategoryID INT, Description VARCHAR (100))
 
 
 --For (type BOOLEAN) in items --> 0 = want | 1 = have
