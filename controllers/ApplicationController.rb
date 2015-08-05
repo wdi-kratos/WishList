@@ -29,10 +29,10 @@ class ApplicationController < Sinatra::Base
   # are we authenticated?
   def is_authenicated?
     if session[:current_user].nil? == true
-      puts 'nillio'
+      puts 'not authenticated - GTFO'
       return false
     else
-      puts 'trulio'
+      puts 'authenticated'
       return true
     end
   end

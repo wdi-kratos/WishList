@@ -4,22 +4,6 @@
 
 <li><a href='/items/create'>Create Item</a></li>
 
-<table>
-  <thead>
-    <th>Title</th>
-    <th>Description</th>
-    <th><!-- <%= @type %> --></th>
-    <th>Edit?</th>
-  </thead>
+<h2>THIS SHOULD WORK!</h2>
 
-  <tbody>
-    <% @items.each do |item| %>
-      <tr>
-        <td><%= item.id %></td>
-        <td><%= item.title %></td>
-        <td><%= item.description %></td>
-        <td><a href='/items/edit/<%= items.id %>'>Edit</a></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<button type="button" name="logout"><a href="/users/logout">Logout</button></a>
