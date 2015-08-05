@@ -3,40 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Item</title>
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Syncopate|Contrail+One|Strait' rel='stylesheet' type='text/css'>
+
   </head>
   <body>
-    <h1>Create Item</h1>
+    <header>
+      <a class="logout" href="/users/logout">Logout</button></a>
+      <img class="registerLogo" src="/images/logo-final.png" alt=""/>
+    </header>
+
+    <h1 class="signup">Create Item</h1>
     <!-- Enter dropdown menu for the category -->
     <div class="container">
-      <h2>Select your Category</h2>
-      <p>Click on the dropdown button to select your category.</p>
+      <p class="signup2">Click on the dropdown button to select your category.</p>
       <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dropdown Example
+        <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Categories
+
         <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sporting Goods</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Home Goods</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Books</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Electronics</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
           <li role="presentation" class="divider"></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
         </ul>
       </div>
     </div>
 
-    <form action="" method="post">
+    <form class="itemsform" action="" method="post">
 
-      <input type="text" name="title" placeholder="Title">
-      <input type="text" name="description" placeholder="Description">
-      <input type="text" name="color" value="color?">
-      <input type="text" name="size" value="size?">
-      <input type="text" name="condition" value="condition?">
-      <input type="text" name="location" value="location?">
-      <input type="submit" value="Create Item">
+      <input class="itemsform1" type="text" name="title" placeholder="Title">
+      <input class="itemsform2" type="text" name="description" placeholder="Description">
+      <input class="itemsform3" type="text" name="color" value="" placeholder="color">
+      <input class="itemsform4" type="text" name="size" value="" placeholder="size">
+      <input class="itemsform5" type="text" name="condition" value="" placeholder="condition">
+      <input class="itemsform6" type="text" name="location" value="" placeholder="location">
+      </form>
+      <input class="form6" type="submit" value="Create Item">
 
-    </form>
+
 
   </body>
 </html>
