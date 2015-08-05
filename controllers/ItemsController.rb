@@ -6,9 +6,9 @@ class ItemsController < ApplicationController
 
     authorization_check
 
-    @item = ItemsModel.all
-    erb :index
-  end
+      @item = ItemsModel.all
+      erb :index
+    end
 
   ## create a new item
   get '/create' do
@@ -24,15 +24,17 @@ class ItemsController < ApplicationController
     @message = ''
 
     @item = ItemsModel.new
+    @item.userid = session[:current_user].id
     @item.title = params[:title]
     @item.description = params[:description]
+    @category.category = params[:category]
     @attribute = AttributesModel.new
     @attribute.color = params[:color]
     @attribute.size = params[:size]
     @attribute.condition = params[:condition]
     @attribute.location = params[:location]
-    @item.save
     @attribute.save
+    @item.save
 
     @message = 'has been sucessfully added to your list!'
     erb :item_notification

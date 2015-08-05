@@ -1,3 +1,4 @@
+
 CREATE DATABASE wishlist;
 
 \c wishlist
@@ -8,7 +9,7 @@ CREATE TABLE category (categoryID SERIAL PRIMARY KEY, name VARCHAR(100));
 
 CREATE TABLE items (itemID SERIAL PRIMARY KEY, userID INTEGER REFERENCES users(userID), type BOOLEAN, categoryID INTEGER REFERENCES category(categoryID), title VARCHAR(255), description VARCHAR(255));
 
-CREATE TABLE attributes (attrID SERIAL PRIMARY KEY, itemID INTEGER REFERENCES items(itemID), color VARCHAR(255), size VARCHAR(255), condition VARCHAR(255), location VARCHAR(255));
+CREATE TABLE attribute (attrID SERIAL PRIMARY KEY, itemID INTEGER REFERENCES items(itemID), color VARCHAR(255), size VARCHAR(255), condition VARCHAR(255), location VARCHAR(255));
 
 
 -- CREATE TABLE item_SubCategory (itemID INT, SubCategoryID INT)
@@ -19,3 +20,28 @@ CREATE TABLE attributes (attrID SERIAL PRIMARY KEY, itemID INTEGER REFERENCES it
 INSERT INTO category (name)
 VALUES
 ('Sporting Goods'), ('Electronics'), ('Home Goods'), ('Books'), ('Other');
+
+
+-- TO be used with migrations via RAKE --
+-- class ItemsModel < ActiveRecord::Migration
+--   def change
+--     create_table :items do |t|
+--       t.belongs_to :users
+--       t.VARCHAR(255) :title
+--       t.VARCHAR(255) :description
+--     end
+--
+--     create_table :category do |t|
+--       t.belongs_to :items index: true
+--       t.VARCHAR(100) :name
+--     end
+--
+--     create_table :attributes do |t|
+--       t.belongs_to :items, index: true
+--       t.VARCHAR(255) :color
+--       t.VARCHAR(255) :size
+--       t.VARCHAR(255) :condtion
+--       t.VARCHAR(255) :location
+--     end
+--   end
+-- end
