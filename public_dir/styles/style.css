@@ -14,24 +14,54 @@ html, body {
   /*BELOW IS CSS FOR WELCOME PAGE*/
   .welcometext {
     font-family: Syncopate;
-    font-size: 5vw;
+    font-size: 2vw;
     color: gray;
+    margin-top: 17%;
     margin-bottom:-20px;
+    margin-left: 2%;
     z-index:99;
     position: absolute;
+    display: none;
+  }
+
+  .lines{
+    background-color: rgb(241, 54, 54);
+    height: 1px;
+    width: 100%;
+    border: solid 1px rgb(241, 54, 54);
+    opacity: .3;
+    position: absolute;
+    margin-left:;
+    margin-top: 19%;
+
+  }
+
+  .lines1{
+
+    background-color: rgb(241, 54, 54);
+    height: 1px;
+    width: 100%;
+    margin-bottom:-100px;
+    border: solid 1px rgb(241, 54, 54);
+    opacity: .3;
+    position: absolute;
+    margin-left:;
+    margin-top: 43%;
   }
 
   .photo {
     width: 100%;
-    z-index:;
+    z-index:0;
     opacity: .3;
     padding: -1px;
+    margin-top:;
+    margin-bottom: 0%;
   }
 
   .derphoto {
     background-color: black;
     width: 100%;
-    z-index:;
+    z-index:0;
     margin-bottom: -44%;
   }
 
@@ -39,35 +69,37 @@ html, body {
     position: absolute;
     width: 60%;
     height: auto;
-    margin-left: 23.5%;
+    margin-left: 20%;
     margin-bottom: 20%;
 }
 
 .button1 {
-  background-color: rgb(227, 73, 73);
+  background-color: gray;
   font-family: Strait;
-  color: white;
-  font-size:2.8vw;
-  margin-top: 45%;
+  color: black;
+  font-size:2vw;
+  margin-top: 40%;
   margin-bottom: 5%;
   width: 40%;
-  margin-left: 10%;
-  margin-right:;
+  margin-left: 5%;
+  margin-right:5%;
   padding-top:;
   padding-bottom:;
+  border: solid 3px gray;
 }
 
 .button2 {
-  background-color: rgb(227, 73, 73);
+  background-color: gray;
   font-family: Strait;
-  color: white;
-  font-size: 2.8vw;
-  margin-top: 45%;
+  color: black;
+  font-size: 2vw;
+  margin-top: 40%;
   margin-left:1%;
-  margin-right: 8%;
+  margin-right: 5%;
   width: 40%;
   padding-top:;
   padding-bottom:;
+  border: solid 3px gray;
 }
 
 /*BELOW IS THE CSS FOR USERS_REGISTER.ERB*/
