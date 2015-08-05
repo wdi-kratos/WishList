@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
 
 
-  # Create a new list item
+  # Views items on the user's list.
   get '/' do
 
     authorization_check
@@ -29,7 +29,7 @@ class ItemsController < ApplicationController
     @item.color = params[:color]
     @item.size = params[:size]
     @item.condition = params[:condition]
-    @item.location = params[:location
+    @item.location = params[:location]
     @item.save
 
     @message = 'has been sucessfully added to your list!'
@@ -44,7 +44,7 @@ class ItemsController < ApplicationController
     @id = params[:id]
     @item = ItemsModel.find(@id)
 
-    erb :item_edit
+    erb :edit
   end
 
   post '/edit' do
@@ -58,7 +58,7 @@ class ItemsController < ApplicationController
     @item.color = params[:color]
     @item.size = params[:size]
     @item.condition = params[:condition]
-    @item.location = params[:location
+    @item.location = params[:location]
     @item.save
 
     @message = 'has been sucessfully modified from your list!'

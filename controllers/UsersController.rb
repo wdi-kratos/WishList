@@ -17,6 +17,7 @@ class UsersController < ApplicationController
 
   post "/register" do
     @message = ''
+    @login_success_message = ''
 
     if self.does_user_exist(params[:user_name]) == true
       @message = 'The username you selected already exists. Please try again'
@@ -35,8 +36,9 @@ class UsersController < ApplicationController
     new_user.is_admin = false
     new_user.save
 
-    session[:current_user] = user
+    session[:current_user] = new_user
     @message = 'Congrats!  Your account has been registered.'
+    @login_success_message = "<a href='/items/index'><strong>Click to See your List</strong></a>"
 
     erb :user_notification
 
@@ -49,14 +51,16 @@ class UsersController < ApplicationController
 
   post "/login" do
     @message = ''
+    @login_error_message = ''
     if self.does_user_exist(params[:user_name]) == true
       user = UsersModel.where(:user_name => params[:user_name]).first!
       if user.password_hash == BCrypt::Engine.hash_secret(params[:password], user.password_salt)
         session[:current_user] = user
-        redirect "/"
+        redirect "/items/index"
       end
     end
     @message = 'A login error has occured. Please try again.'
+    @login_error_message = "<a href='/users/login'><strong>Back to Login</strong></a>"
     erb :user_notification
   end
 
