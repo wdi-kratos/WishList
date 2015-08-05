@@ -16,6 +16,7 @@ class UsersController < ApplicationController
   end
 
   post "/register" do
+    @message1 = ''
     @message = ''
     @login_success_message = ''
 
@@ -37,8 +38,9 @@ class UsersController < ApplicationController
     new_user.save
 
     session[:current_user] = new_user
-    @message = 'Congrats!  Your account has been registered.'
-    @login_success_message = "<a href='/items'><strong>Click to See your List</strong></a>"
+    @message1 = "Congratulations!"
+    @message = 'Your account has been registered.'
+    @login_success_message = "<a class='form5' href='/items'>Let's get started</a>"
 
     erb :user_notification
 
@@ -50,6 +52,7 @@ class UsersController < ApplicationController
   end
 
   post "/login" do
+    @message2 = ''
     @message = ''
     @login_error_message = ''
     if self.does_user_exist(params[:user_name]) == true
@@ -59,8 +62,9 @@ class UsersController < ApplicationController
         redirect "/items"
       end
     end
+    @message2 = 'Error!'
     @message = 'A login error has occured. Please try again.'
-    @login_error_message = "<a href='/users/login'><strong>Back to Login</strong></a>"
+    @login_error_message = "<a class='form5' href='/users/login'>Back to Login</a>"
     erb :user_notification
   end
 

@@ -27,6 +27,7 @@ class ItemsController < ApplicationController
     @item.userid = session[:current_user].id
     @item.title = params[:title]
     @item.description = params[:description]
+    @category = CategoriesModel.new
     @category.category = params[:category]
     @attribute = AttributesModel.new
     @attribute.color = params[:color]

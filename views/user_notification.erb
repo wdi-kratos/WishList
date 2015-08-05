@@ -1,10 +1,26 @@
-<h4>Welcome</h4>
 
-<p>
-  <%= @message %>
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WishList</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Syncopate|Contrail+One|Strait' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <img class="registerLogo" src="/images/logo-final.png" alt="" />
+    </header>
+  
+      <h4 class="signup"><%=@message1%></h4>
 
+      <h4 class ="signup"><%=@message2%></h4>
 
-<strong> <%= @login_success_message %> </strong>
+      <p class="signup2"><%=@message%></p>
 
-<strong> <%= @login_error_message %> </strong>
+      <strong><%=@login_success_message%></strong>
+
+      <strong><%=@login_error_message%></strong>
+
+  </body>
+</html>

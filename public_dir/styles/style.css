@@ -74,22 +74,22 @@ html, body {
   margin-bottom: 20%;
 }
 
-  .want {
-    color: black;
-    opacity: .5;
-    position: absolute;
-    font-family: Syncopate;
-    margin-left: 33%;
-    margin-top: 18%;
-    text-decoration: underline;
-
-  }
+.want {
+  font-size: 2vw;
+  color: black;
+  opacity: .5;
+  position: absolute;
+  font-family: Syncopate;
+  margin-left: 33%;
+  margin-top: 18%;
+  text-decoration: underline;
+}
 
 .button1 {
   background-color: gray;
   font-family: Strait;
   color: white;
-  font-size:2vw;
+  font-size:1.5vw;
   margin-top: 35%;
   margin-bottom: 5%;
   width: 40%;
@@ -104,7 +104,7 @@ html, body {
   background-color: gray;
   font-family: Strait;
   color: white;
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin-top: 35%;
   margin-left:1%;
   margin-right: 5%;
@@ -119,13 +119,21 @@ html, body {
 .registerLogo {
   width: 50%;
   height: auto;
-  margin-left: 27%;
+  margin-left: 28.5%;
 }
+
 .signup{
   color: rgb(227, 73, 73);
   font-family: Strait;
   text-align: center;
   font-size: 4vw;
+}
+
+.signup2{
+  color: rgb(227, 73, 73);
+  font-family: Strait;
+  text-align: center;
+  margin-bottom: 6%;
 }
 
 .formbox {
@@ -184,4 +192,98 @@ html, body {
   border: none;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+/**/
+
+/*.form5 class for erb error & login success messages*/
+
+.form5 {
+  text-align: center;
+  font-size: 2vw;
+  background-color: rgb(227, 73, 73);
+  color: white;
+  font-family: Strait;
+  width: 30%;
+  margin-top:;
+  margin-bottom: 5%;
+  margin-left:41%;
+  border: 0;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+/*CSS for index.erb*/
+
+.formbox1 {
+  width: 60%;
+  height: 100%;
+  background-color: rgba(19, 0, 0, 0.05);
+  margin-left: 20%;
+  margin-bottom: 10%;
+}
+
+.logout {
+  text-align: center;
+  font-size: 2vw;
+  background-color: rgb(227, 73, 73);
+  color: white;
+  font-family: Strait;
+  width: 30%;
+  margin-top: 300px;
+  margin-bottom:-100px;
+  margin-left:85%;
+  border: 0;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+.form6 {
+  text-align: center;
+  font-size: 2vw;
+  background-color: rgb(227, 73, 73);
+  color: white;
+  font-family: Strait;
+  width: 30%;
+  margin-top:;
+  margin-bottom: 5%;
+  margin-left:35%;
+  border: 0;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+.wantsbox {
+  width: 70%;
+  background-color: white;
+  height: 100px;
+  margin-left: 15%;
+}
+
+.havesbox {
+  width: 70%;
+  background-color: white;
+  height: 100px;
+  margin-left: 15%;
+}
+
+.matchesbox {
+  width: 70%;
+  background-color: white;
+  height: 100px;
+  margin-left: 15%;
+  margin-bottom: 25%;
+
 }

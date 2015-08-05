@@ -1,0 +1,5 @@
+<ul>
+   <% @items.each do |item| %>
+    <li><%= items.title.to_s + ' / ' + items.description.to_s + ' / ' + users.user_email.to_s + <br><br>'%></li>
+  <% end %>
+</ul>
