@@ -13,7 +13,7 @@ class ItemsController < ApplicationController
 
       @items.each do |item|
 
-        if item.userid = userid
+        if item.userid == userid
 
           if item.itemtype == true
             @haves.push(item)
