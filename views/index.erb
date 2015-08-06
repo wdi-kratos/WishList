@@ -20,9 +20,10 @@
       <h2 class="signup">wants</h2>
       <div class="wantsbox">
 
-
+        <% if @wants.nil? == false %>
         <% @wants.each do |want| %>
-          <li><%= want.title %></li>
+          <li><%= want.title.to_s %></li>
+        <% end %>
         <% end %>
 
 
@@ -30,13 +31,26 @@
 
       <h2 class="signup">haves</h2>
       <div class="havesbox">
-
+        <% if @haves.nil? == false %>
+        <% @haves.each do |has| %>
+          <li><%= has.title.to_s %></li>
+        <% end %>
+        <% end %>
 
 
       </div>
-      <div>
-      <!-- <h2 class="signup">matches</h2>
-      <div class="matchesbox"> -->
+
+      <h2 class="signup">barter with</h2>
+        <% if @matches.nil? == false %>
+        <% @matches.each do |match| %>
+          <li><a href='mailto:<%= match[:email] %>'><%= match[:email] %></a> has <strong><%= match[:title] %></strong></li>
+        <% end %>
+        <% end %>
+      <div class="matchesbox">
+
+
+
+
       </div>
 
 
