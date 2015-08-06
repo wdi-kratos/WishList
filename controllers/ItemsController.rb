@@ -28,7 +28,7 @@ class ItemsController < ApplicationController
     puts params
     puts '-----'
 
-    user_wants_item = params.has_key('wants_item')
+    user_wants_item = params.has_key?('wants_item')
     user_has_item = params.has_key?('has_item')
 
     puts user_has_item
@@ -41,21 +41,18 @@ class ItemsController < ApplicationController
     @item = ItemsModel.new
     @item.userid = session[:current_user].id
 
-    @item.type = params[:type] == "1" ##
-
-
-    @item.attrid = AttributesModel.find(params[:id]) # not working!
-    @item.title = params[:title]
-    @item.description = params[:description]
-    @item.categoryid = params[:category] #not working! select from dropdown
     @attribute = AttributesModel.new
     @attribute.color = params[:color]
     @attribute.size = params[:size]
     @attribute.condition = params[:condition]
     @attribute.location = params[:location]
-
-
     @attribute.save
+
+    @item.attrid = @attribute.id
+    @item.title = params[:title]
+    @item.description = params[:description]
+    @item.categoryid = params[:category] #not working! select from dropdown
+
     @item.save
 
     @message = 'has been sucessfully added to your list!'
