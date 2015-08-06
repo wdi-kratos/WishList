@@ -3,3 +3,15 @@
     <li><%= items.title.to_s + ' / ' + items.description.to_s + ' / ' + users.user_email.to_s + <br><br>'%></li>
   <% end %>
 </ul>
+
+
+
+<table>
+  <thead>
+    <th>Title</th>
+    <th>Description</th>
+    <th><!-- <%= @type %> --></th>
+    <th>Edit?</th>
+  </thead>
+
+</table>
