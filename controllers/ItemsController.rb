@@ -41,11 +41,9 @@ class ItemsController < ApplicationController
     @item.attrid = @attribute.id
     @item.title = params[:title]
     @item.description = params[:description]
-
     @item.categoryid = params[:category] #not working! select from dropdown
     @item.type = user_wants_item #Radio button = F
     @item.type = user_has_item # Radio button = T
-
     @item.save
 
     @message = 'has been sucessfully added to your list!'
