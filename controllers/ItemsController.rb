@@ -16,20 +16,9 @@ class ItemsController < ApplicationController
   end
 
   post '/create' do
-
     authorization_check
 
-    #
-    # puts params
-    # puts '-----'
-    #
-    # user_wants_item = params.has_key?('wants_item')
-
-    puts params
-    puts '-----'
-
     user_wants_item = params.has_key?('wants_item')
-
     user_has_item = params.has_key?('has_item')
 
     puts user_has_item
@@ -40,7 +29,6 @@ class ItemsController < ApplicationController
     @message = ''
 
     @item = ItemsModel.new
-    @item.userid = session[:current_user].id
 
     @attribute = AttributesModel.new
     @attribute.color = params[:color]
@@ -49,10 +37,14 @@ class ItemsController < ApplicationController
     @attribute.location = params[:location]
     @attribute.save
 
+    @item.userid = session[:current_user].id
     @item.attrid = @attribute.id
     @item.title = params[:title]
     @item.description = params[:description]
+
     @item.categoryid = params[:category] #not working! select from dropdown
+    @item.type = user_wants_item #Radio button = F
+    @item.type = user_has_item # Radio button = T
 
     @item.save
 
