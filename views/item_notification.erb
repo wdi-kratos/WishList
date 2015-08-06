@@ -10,13 +10,16 @@
     <header>
       <img class="registerLogo" src="/images/logo-final.png" alt="" />
     </header>
-<p>
-  Congrats! Your item <%= @item.title %> has been <%= @message %>.
+
+<h4 class="signup">Item Added</h4>
+
+<p class="signup2">
+  Your item <%=@item.title %> has been <%= @message %>.
 </p>
 
 
 
-    <li><a href='/items/list'>Back to your Wishlist</a></li>
+    <li><a class="form7" href='/items'>Back to your Wishlist</a></li>
 
   </body>
 </html>

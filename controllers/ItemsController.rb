@@ -46,7 +46,7 @@ class ItemsController < ApplicationController
     @item.type = user_has_item # Radio button = T
     @item.save
 
-    @message = 'has been sucessfully added to your list!'
+    @message = 'has been sucessfully added to your list'
     erb :item_notification
   end
 
