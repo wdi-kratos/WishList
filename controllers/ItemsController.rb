@@ -28,7 +28,7 @@ class ItemsController < ApplicationController
     puts params
     puts '-----'
 
-    user_wants_item = params.has_key('wants_item')
+    user_wants_item = params.has_key?('wants_item')
 
     user_has_item = params.has_key?('has_item')
 

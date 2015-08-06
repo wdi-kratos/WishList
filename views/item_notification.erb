@@ -1,8 +1,22 @@
-<h1>Database Updated!</h1>
 
-<p>
-  Congrats! Your item <%= @item.name %> has been <%= @message %>.
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WishList</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Syncopate|Contrail+One|Strait' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <img class="registerLogo" src="/images/logo-final.png" alt="" />
+    </header>
 
+    <h4 class="signup">Database Updated!</h3>
 
-<li><a href='/items/list'>Back to your Wishlist</a></li>
+    <p class="signup2">Congrats! Your item <%= @item.name %> has been <%= @message %>.</p>
+
+    <li><a href='/items/list'>Back to your Wishlist</a></li>
+
+  </body>
+</html>
