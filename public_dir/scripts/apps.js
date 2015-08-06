@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
-$(".welcometext").fadeIn(2000);
+$(".want").fadeIn(1500);
 
+$(".catdrop").click(function() {
+  $(".itemform").slideDown(1000);
+});
 
 });

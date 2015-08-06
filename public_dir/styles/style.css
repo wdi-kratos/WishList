@@ -11,44 +11,6 @@ html, body {
   background-color: rgb(255, 255, 255);
 }
 
-/*BELOW IS CSS FOR WELCOME PAGE*/
-/*.welcometext {
-  font-family: Syncopate;
-  font-size: 2vw;
-  color: gray;
-  margin-top: 17%;
-  margin-bottom:-20px;
-  margin-left: 2%;
-  z-index:99;
-  position: absolute;
-  /*display: none;*/
-/*}*/
-
-
-/*BELOW IS TWO LINES FOR WELCOME PAGE, MAYBE WON'T USE*/
-/*.lines{
-  background-color: rgb(241, 54, 54);
-  height: 1px;
-  width: 100%;
-  border: solid 1px rgb(241, 54, 54);
-  opacity: .3;
-  position: absolute;
-  margin-left:;
-  margin-top: 19%;
-}
-
-.lines1{
-  background-color: rgb(241, 54, 54);
-  height: 1px;
-  width: 100%;
-  margin-bottom:-100px;
-  border: solid 1px rgb(241, 54, 54);
-  opacity: .3;
-  position: absolute;
-  margin-left:;
-  margin-top: 43%;
-}*/
-
 .photo {
   width: 100%;
   z-index:0;
@@ -77,12 +39,13 @@ html, body {
 .want {
   font-size: 2vw;
   color: black;
-  opacity: .5;
+  opacity: .52;
   position: absolute;
   font-family: Syncopate;
   margin-left: 33%;
   margin-top: 18%;
   text-decoration: underline;
+  display:none;
 }
 
 .button1 {
@@ -251,7 +214,7 @@ html, body {
   background-color: rgb(227, 73, 73);
   color: white;
   font-family: Strait;
-  width: 30%;
+  width: 30% ;
   margin-top:;
   margin-bottom: 5%;
   margin-left:35%;
@@ -293,6 +256,9 @@ html, body {
   margin-left: 30%;
   margin-bottom: 5%;
   background-color: rgba(19, 0, 0, 0.05);
+}
+.itemform {
+  display: none;
 }
 
 .btn {
@@ -376,11 +342,30 @@ html, body {
   font-family: Strait;
   width: 60%;
   height: 100%;
-  background-color: rgba(0, 0, 0,);
+  background-color: rgba(0, 0, 0);
   border: none;
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 2%;
   margin-left: 20%;
-  margin-bottom: 5%;
+  margin-bottom:5%;
 }
+
+#menu1 {
+  font-size: 2vw;
+  font-family: Strait;
+  width: 286%;
+  height:;
+  background-color: rgb(227, 73, 73);
+  border: none;
+  border-radius: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  margin-left: 0%;
+  margin-bottom: 10%;
+  margin-top: -5%;
+}
+ .dropdown {
+   margin-left: 35%;
+ }

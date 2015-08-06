@@ -5,10 +5,10 @@
     <title>Item</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/scripts/jquery.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Syncopate|Contrail+One|Strait' rel='stylesheet' type='text/css'>
-
+    <script src="/scripts/apps.js"></script>
   </head>
   <body>
     <header>
@@ -20,30 +20,33 @@
     <!-- Enter dropdown menu for the category -->
     <div class="container">
       <p class="signup2">Click on the dropdown button to select your category.</p>
-      <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Categories
 
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sporting Goods</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Home Goods</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Books</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Electronics</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
-          <li role="presentation" class="divider"></li>
-        </ul>
-      </div>
     </div>
 
-    <form class="itemsform" action="" method="post">
+    <div class="dropdown btn-group">
+     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu1">Categories<span class="caret"></span>
+     </button>
+     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Sporting Goods</a></li>
+       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Home Goods</a></li>
+       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Books</a></li>
+       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Electronics</a></li>
+       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+       <li class="catdrop" role="presentation" class="divider"></li>
+     </ul>
+   </div><br>
 
-      <input class="itemsform1" type="text" name="title" placeholder="Title">
-      <input class="itemsform2" type="text" name="description" placeholder="Description">
-      <input class="itemsform3" type="text" name="color" value="" placeholder="color">
-      <input class="itemsform4" type="text" name="size" value="" placeholder="size">
-      <input class="itemsform5" type="text" name="condition" value="" placeholder="condition">
-      <input class="itemsform6" type="text" name="location" value="" placeholder="location">
+    <div class="itemform">
+      <form class="itemsform" action="" method="post">
+        <input class="itemsform1" type="text" name="title" placeholder="Title">
+        <input class="itemsform2" type="text" name="description" placeholder="Description">
+        <input class="itemsform3" type="text" name="color" value="" placeholder="color">
+        <input class="itemsform4" type="text" name="size" value="" placeholder="size">
+        <input class="itemsform5" type="text" name="condition" value="" placeholder="condition">
+        <input class="itemsform6" type="text" name="location" value="" placeholder="location">
       </form>
+    </div><br>
+
       <input class="form6" type="submit" value="Create Item">
 
 
