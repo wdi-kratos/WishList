@@ -3,7 +3,8 @@
 }
 html, body {
   width: 100%;
-  min-height: auto;
+  min-height: 100%;
+  height: 100%;
   margin-top:0px;
   margin-right:0px;
   margin-bottom:0px;
@@ -14,7 +15,7 @@ html, body {
 .photo {
   width: 100%;
   z-index:0;
-  opacity: .6;
+  opacity: .7;
   padding: -1px;
   margin-top:;
   margin-bottom: 0%;
@@ -45,7 +46,22 @@ html, body {
   margin-left: 33%;
   margin-top: 18%;
   text-decoration: underline;
-  display:none;
+  display: none;
+}
+
+/*.buttonbar {
+  width: 100%;
+  height: 70px;
+  background-color: lightgray;
+  margin-top:-6.4em;
+  margin-bottom:-25%;
+}*/
+
+.button1:hover {
+  background-color: rgba(76, 76, 76, 1);
+}
+.button2:hover {
+  background-color:rgba(76, 76, 76, 1);
 }
 
 .button1 {
