@@ -26,11 +26,11 @@
      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu1">Categories<span class="caret"></span>
      </button>
      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Sporting Goods</a></li>
-       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Home Goods</a></li>
-       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Books</a></li>
-       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Electronics</a></li>
-       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#" data-catid='1'>Sporting Goods</a></li>
+       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#" data-catid='3'>Home Goods</a></li>
+       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#" data-catid='4'>Books</a></li>
+       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#" data-catid='2'>Electronics</a></li>
+       <li class="catdrop" role="presentation"><a role="menuitem" tabindex="-1" href="#" data-catid='5'>Other</a></li>
        <li class="catdrop" role="presentation" class="divider"></li>
      </ul>
    </div><br>
@@ -43,7 +43,7 @@
         <input type='radio' name='has_item'> have
         <input type='radio' name='wants_item'> want
         </div>
-
+        <input id="category-hidden" type="hidden" name="category" value="">
         <input class="itemsform1" type="text" name="title" placeholder="Title">
         <input class="itemsform2" type="text" name="description" placeholder="Description">
         <input class="itemsform3" type="text" name="color" value="" placeholder="color">

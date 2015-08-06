@@ -24,6 +24,8 @@ class ItemsController < ApplicationController
     puts user_has_item
     puts user_wants_item
 
+
+
     puts '-----'
 
     @message = ''
@@ -41,7 +43,7 @@ class ItemsController < ApplicationController
     @item.attrid = @attribute.id
     @item.title = params[:title]
     @item.description = params[:description]
-    @item.categoryid = params[:category] #not working! select from dropdown
+    @item.categoryid = params[:category].to_i #not working! select from dropdown
     @item.type = user_wants_item #Radio button = F
     @item.type = user_has_item # Radio button = T
     @item.save
