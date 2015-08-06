@@ -48,25 +48,6 @@ class ApplicationController < Sinatra::Base
     end
   end
 
-  # def build_view_model # create an array made up of a set of hash from the items/user table
-  # user_array = []
-  #
-  # items.each do |item|
-  #   userid = session[:current_user].id
-  #   item_data = {:item => items.find(items.userid),
-  #    :title => items.find(items.title),
-  #    :description => items.find(items.description)}
-  #   end
-  #
-  # categories.each do |category|
-  #     category_data = :category => {categories.find(items.attrid)}
-  #   end
-  #
-  # users.each do |email|
-  #     contact_info = :user_email => users.find(item.userid)}
-  #   end
-
-  #   return user_array[item_data, category_data, contact_info]
-  # end
+  
 
 end

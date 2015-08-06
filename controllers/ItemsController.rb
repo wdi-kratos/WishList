@@ -5,8 +5,39 @@ class ItemsController < ApplicationController
   get '/' do
     authorization_check
       # @item = ItemsModel.find(session[:current_user]).id
-      @item =ItemsModel.where(userid: session[:current_user].id)
+      @item = ItemsModel.all
+
+      @haves = Array.new
+      @wants = Array.new
+      userid = session[:current_user].id
+
+      @items.each do |item|
+
+        if item.userid = userid
+
+          if item.type == true
+            @haves.push(item)
+          else
+            @wants.push(item)
+          end
+
+        end
+
+      end
+
+      categories.each do |category|
+          category_data = :category => {categories.find(items.attrid)}
+        end
+
+      users.each do |email|
+          contact_info = :user_email => users.find(item.userid)}
+        end
+
+        return user_array[item_data, category_data, contact_info]
+
+
       erb :index
+
     end
 
   ## create a new item
