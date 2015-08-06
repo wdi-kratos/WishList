@@ -64,6 +64,15 @@ class ApplicationController < Sinatra::Base
   #
   # users.each do |email|
   #     contact_info = :user_email => {users.find(item.userid)}
+  #    :description => items.find(items.description)
+  #   end
+  #
+  # categories.each do |category|
+  #     category_data = :category => categories.find(items.attrid)
+  #   end
+  #
+  # users.each do |email|
+  #     contact_info = :user_email => users.find(item.userid)}
   #   end
   #   return user_array[item_data, category_data, contact_info]
   # end

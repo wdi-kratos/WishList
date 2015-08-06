@@ -48,7 +48,6 @@ class ItemsController < ApplicationController
     @item.title = params[:title]
     @item.description = params[:description]
     @item.categoryid = params[:category] #not working! select from dropdown
-
     @attribute = AttributesModel.new
     @attribute.color = params[:color]
     @attribute.size = params[:size]
