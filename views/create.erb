@@ -22,7 +22,6 @@
       <p class="signup2">Click on the dropdown button to select your category.</p>
 
 
-
     <div class="dropdown btn-group">
      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu1">Categories<span class="caret"></span>
      </button>
@@ -37,20 +36,20 @@
    </div><br>
 
     <div class="itemform">
+
       <form class="itemsform" action="/items/create" method="post">
-        <div class="radios">
-          <input class="radio1" type='radio' name='has_item'><span class="radio1">have</span>
-          <input class="radio2" type='radio' name='wants_item'><span class="radio2">want</span>
-        </div>
-        <br>
+
         <input class="itemsform1" type="text" name="title" placeholder="Title">
         <input class="itemsform2" type="text" name="description" placeholder="Description">
         <input class="itemsform3" type="text" name="color" value="" placeholder="color">
         <input class="itemsform4" type="text" name="size" value="" placeholder="size">
         <input class="itemsform5" type="text" name="condition" value="" placeholder="condition">
-        <input class="itemsform6" type="text" name="location" value="" placeholder="location"><br>
+        <input class="itemsform6" type="text" name="location" value="" placeholder="location">
+        <input type='radio' name='has_item'> have
+        <input type='radio' name='wants_item'> want
+        <input class="form6" type="submit" value="Create Item">
 
-        <input class="form7" type="submit" value="Create Item">
-      </form>
-  </body>
+        </form>
+    </div><br>
+</body>
 </html>

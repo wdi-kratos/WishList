@@ -55,6 +55,15 @@ class ApplicationController < Sinatra::Base
   #   userid = session[:current_user].id
   #   item_data = {:item => items.find(items.userid),
   #    :title => items.find(items.title),
+  #    :description => items.find(items.description)}
+  #   end
+  #
+  # categories.each do |category|
+  #     category_data = :category => {categories.find(items.attrid)}
+  #   end
+  #
+  # users.each do |email|
+  #     contact_info = :user_email => {users.find(item.userid)}
   #    :description => items.find(items.description)
   #   end
   #
