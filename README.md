@@ -2,9 +2,27 @@
 WDI project #2 / WishList
 
 Concept:
-Wishlist is a site you go to to make your wishes come true.  It allows you to create a list of 'wants' and 'haves' and the platforms return a hit to the items on your 'want' list, if the attributes you describe matches for an item on the list matches an item from another users 'have' list.  Instead of wasting your time scouring for a specific item, just set up your want list and have it come to you!
+WishList is a web application that matches users wants and haves with other users haves and wants. WishList allows users to create a list of 'wants' and 'haves'. The user creates these items and applies a category and a list of attributes to the items. If the users items attributes matches a different users items attributes, that item is placed in the match section of the users involved.
 
-Stakeholders = developers & GA instructors
+Stakeholders = Chris Kim, Tristan Marshall & GA instructors
+
+![alt image](http://i.imgur.com/Gur32FC.jpg)
+
+*Note the "WishList" logo (red logo in header) was illustrated & vectorized by Tristan Marshall*
+
+## Technologies used in creating this application:
+
+* HTML5
+* CSS
+* JavaScript
+* jQuery
+* Sinatra
+* Active Record
+* Inkscape
+* SQL
+* Ruby
+* Postgres
+* Bootstrap
 
 ### User Stories
 
@@ -16,7 +34,7 @@ Stakeholders = developers & GA instructors
 
 
 **Medium Priority:**
-* I want to delete matches if it's not really want I'm looking for
+* I want to delete matches if it's not really what I'm looking for
 * I want to be able to add more attributes to refine my wants and haves
 * I need see a list of potential matches
 * I need a way to connect to my match
