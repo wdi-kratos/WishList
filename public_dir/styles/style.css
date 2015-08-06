@@ -462,7 +462,7 @@ html, body {
 .dropdown {
    margin-left: 35%;
  }
- 
+
 .open>.dropdown-menu {
   background-color: rgb(227, 73, 73);
   color: white;
@@ -471,4 +471,10 @@ html, body {
   margin-top: -11%;
   font-family: Strait;
   font-size: 1.5vw;
+}
+
+.ruby {
+  font-family: Strait;
+  text-align: center;
+  color: gray;
 }

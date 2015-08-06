@@ -33,7 +33,7 @@
       <div class="havesbox">
         <% if @haves.nil? == false %>
         <% @haves.each do |has| %>
-          <li><%= has.title.to_s %></li>
+          <li class="ruby"><%= has.title.to_s + " / " + has.description.to_s %></li>
         <% end %>
         <% end %>
 
