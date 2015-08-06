@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
 
 
   # Views items on the user's list.
-  get '/index' do
+  get '/' do
     authorization_check
       # @item = ItemsModel.find(session[:current_user]).id
       @item =ItemsModel.where(userid: session[:current_user].id)
@@ -17,14 +17,6 @@ class ItemsController < ApplicationController
 
   post '/create' do
     authorization_check
-
-    puts params
-    puts '-----'
-
-    user_wants_item = params.has_key?('wants_item')
-
-    puts params
-    puts '-----'
 
     user_wants_item = params.has_key?('wants_item')
     user_has_item = params.has_key?('has_item')
@@ -49,9 +41,10 @@ class ItemsController < ApplicationController
     @item.attrid = @attribute.id
     @item.title = params[:title]
     @item.description = params[:description]
+
     @item.categoryid = params[:category] #not working! select from dropdown
-    @item.type = params[:has_item] #Radio button BOOLEAN
-    @item.type = params[:wants_item]
+    @item.type = user_wants_item #Radio button = F
+    @item.type = user_has_item # Radio button = T
 
     @item.save
 
