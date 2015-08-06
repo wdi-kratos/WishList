@@ -3,37 +3,49 @@ class ItemsController < ApplicationController
 
   # Views items on the user's list.
   get '/' do
-
     authorization_check
-
-      @item = ItemsModel.all
+      # @item = ItemsModel.find(session[:current_user]).id
+      @item =ItemsModel.where(userid: session[:current_user].id)
       erb :index
     end
 
   ## create a new item
   get '/create' do
-
     authorization_check
-
     erb :create
   end
 
   post '/create' do
 
     authorization_check
+    puts params
+    puts '-----'
+
+    user_wants_item = params.has_key('wants_item')
+    user_has_item = params.has_key?('has_item')
+
+    puts user_has_item
+    puts user_wants_item
+
+    puts '-----'
+
     @message = ''
 
     @item = ItemsModel.new
     @item.userid = session[:current_user].id
+
+    @item.attrid = AttributesModel.find(params[:id]) # not working!
     @item.title = params[:title]
     @item.description = params[:description]
-    @category = CategoriesModel.new
-    @category.category = params[:category]
+    @item.categoryid = params[:category] #not working! select from dropdown
+
     @attribute = AttributesModel.new
     @attribute.color = params[:color]
     @attribute.size = params[:size]
     @attribute.condition = params[:condition]
     @attribute.location = params[:location]
+
+
     @attribute.save
     @item.save
 

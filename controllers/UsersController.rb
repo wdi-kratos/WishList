@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 
     if does_user_exist(params[:user_name]) == true
       @message = 'The username you selected already exists. Please try again'
-      erb :user_notification
+      return erb :user_notification
     end
 
     # generate a salt and hash to use
