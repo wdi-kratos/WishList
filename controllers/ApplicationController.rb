@@ -47,4 +47,14 @@ class ApplicationController < Sinatra::Base
     end
   end
 
+  def build_view_model
+    user_array = []
+    item.each do |t|
+    item.userid
+    user = user.find(item.userid)
+    end
+
+  end
+
+
 end
