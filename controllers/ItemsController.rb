@@ -5,7 +5,7 @@ class ItemsController < ApplicationController
   get '/' do
     authorization_check
       # @item = ItemsModel.find(session[:current_user]).id
-      @item = ItemsModel.all
+      @items = ItemsModel.all
 
       @haves = Array.new
       @wants = Array.new
@@ -15,7 +15,7 @@ class ItemsController < ApplicationController
 
         if item.userid = userid
 
-          if item.type == true
+          if item.itemtype == true
             @haves.push(item)
           else
             @wants.push(item)
@@ -25,15 +25,15 @@ class ItemsController < ApplicationController
 
       end
 
-      categories.each do |category|
-          category_data = :category => {categories.find(items.attrid)}
-        end
-
-      users.each do |email|
-          contact_info = :user_email => users.find(item.userid)}
-        end
-
-        return user_array[item_data, category_data, contact_info]
+      # categories.each do |category|
+      #     category_data = :category => {categories.find(items.attrid)}
+      #   end
+      #
+      # users.each do |email|
+      #     contact_info = :user_email => users.find(item.userid)}
+      #   end
+      #
+      #   return user_array[item_data, category_data, contact_info]
 
 
       erb :index
@@ -75,8 +75,8 @@ class ItemsController < ApplicationController
     @item.title = params[:title]
     @item.description = params[:description]
     @item.categoryid = params[:category].to_i #not working! select from dropdown
-    @item.type = user_wants_item #Radio button = F
-    @item.type = user_has_item # Radio button = T
+    @item.itemtype = user_wants_item #Radio button = F
+    @item.itemtype = user_has_item # Radio button = T
     @item.save
 
     @message = 'has been sucessfully added to your list'

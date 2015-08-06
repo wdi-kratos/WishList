@@ -7,7 +7,7 @@ CREATE TABLE users (userID SERIAL PRIMARY KEY, user_name VARCHAR(255), user_emai
 
 CREATE TABLE categories (categoryID SERIAL PRIMARY KEY, name VARCHAR(100));
 
-CREATE TABLE items (itemID SERIAL PRIMARY KEY, userID INTEGER REFERENCES users(userID), attrID INTEGER REFERENCES attributes(attrID), type BOOLEAN, categoryID INTEGER REFERENCES categories(categoryID), title VARCHAR(255), description VARCHAR(255));
+CREATE TABLE items (itemID SERIAL PRIMARY KEY, userID INTEGER REFERENCES users(userID), attrID INTEGER REFERENCES attributes(attrID), itemtype BOOLEAN, categoryID INTEGER REFERENCES categories(categoryID), title VARCHAR(255), description VARCHAR(255));
 
 CREATE TABLE attributes (attrID SERIAL PRIMARY KEY, color VARCHAR(255), size VARCHAR(255), condition VARCHAR(255), location VARCHAR(255));
 
