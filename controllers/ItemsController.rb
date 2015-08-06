@@ -9,20 +9,24 @@ class ItemsController < ApplicationController
 
       @haves = Array.new
       @wants = Array.new
+      @matches = Array.new
       userid = session[:current_user].id
 
       @items.each do |item|
 
-        if item.userid = userid
+        if item.userid == userid
 
           if item.itemtype == true
             @haves.push(item)
           else
             @wants.push(item)
           end
-
+        else
+          match = Hash.new
+          match[:email] = UsersModel.find(item.userid).user_email
+          match[:title] = item.title
+          @matches.push(match)
         end
-
       end
 
       # categories.each do |category|
@@ -35,6 +39,10 @@ class ItemsController < ApplicationController
       #
       #   return user_array[item_data, category_data, contact_info]
 
+      puts '----------yolo-----------'
+      puts @wants
+      puts @haves
+      puts '----------yolo-----------'
 
       erb :index
 
