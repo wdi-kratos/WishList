@@ -39,15 +39,18 @@
 
       <form class="itemsform" action="/items/create" method="post">
 
+        <div class="radios">
+        <input type='radio' name='has_item'> have
+        <input type='radio' name='wants_item'> want
+        </div>
+
         <input class="itemsform1" type="text" name="title" placeholder="Title">
         <input class="itemsform2" type="text" name="description" placeholder="Description">
         <input class="itemsform3" type="text" name="color" value="" placeholder="color">
         <input class="itemsform4" type="text" name="size" value="" placeholder="size">
         <input class="itemsform5" type="text" name="condition" value="" placeholder="condition">
         <input class="itemsform6" type="text" name="location" value="" placeholder="location">
-        <input type='radio' name='has_item'> have
-        <input type='radio' name='wants_item'> want
-        <input class="form6" type="submit" value="Create Item">
+        <input class="form7" type="submit" value="Create Item">
 
         </form>
     </div><br>

@@ -412,9 +412,14 @@ html, body {
 }
 
 .radios {
-  margin-left: 38%;
+  font-family: Strait;
+  font-size: 1.8vw;
+  color: gray;
+  margin-left: 35%;
   margin-top: 5%;
   margin-bottom: -5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #menu1 {
