@@ -172,8 +172,12 @@ html, body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-/**/
+.form4:hover {
+  background-color:rgba(76, 76, 76, 1);
+}
+.form6:hover {
+  background-color:rgba(76, 76, 76, 1);
+}
 
 /*.form5 class for erb error & login success messages*/
 
@@ -223,6 +227,9 @@ html, body {
   padding-right: 30px;
   text-decoration: none;
 }
+.logout:hover {
+  background-color:rgba(76, 76, 76, 1);
+}
 
 .form6 {
   text-align: center;
@@ -231,9 +238,9 @@ html, body {
   color: white;
   font-family: Strait;
   width: 30% ;
-  margin-top:;
+  margin-top:-2%;
   margin-bottom: 5%;
-  margin-left:35%;
+  margin-left:34.5%;
   border: 0;
   border: none;
   padding-top: 15px;
@@ -270,9 +277,10 @@ html, body {
 .itemsform {
   width: 40%;
   margin-left: 30%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   background-color: rgba(19, 0, 0, 0.05);
 }
+
 .itemform {
   display: none;
 }
@@ -378,7 +386,7 @@ html, body {
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 2%;
-  margin-left: 0%;
+  margin-left: 36%;
   margin-bottom: 10%;
   margin-top: -5%;
 }
