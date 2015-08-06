@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
 
 
   # Views items on the user's list.
-  get '/' do
+  get '/index' do
     authorization_check
       # @item = ItemsModel.find(session[:current_user]).id
       @item =ItemsModel.where(userid: session[:current_user].id)
@@ -16,9 +16,7 @@ class ItemsController < ApplicationController
   end
 
   post '/create' do
-
     authorization_check
-
 
     puts params
     puts '-----'
@@ -39,7 +37,6 @@ class ItemsController < ApplicationController
     @message = ''
 
     @item = ItemsModel.new
-    @item.userid = session[:current_user].id
 
     @attribute = AttributesModel.new
     @attribute.color = params[:color]
@@ -48,10 +45,13 @@ class ItemsController < ApplicationController
     @attribute.location = params[:location]
     @attribute.save
 
+    @item.userid = session[:current_user].id
     @item.attrid = @attribute.id
     @item.title = params[:title]
     @item.description = params[:description]
     @item.categoryid = params[:category] #not working! select from dropdown
+    @item.type = params[:has_item] #Radio button BOOLEAN
+    @item.type = params[:wants_item]
 
     @item.save
 
