@@ -21,10 +21,23 @@ class ItemsController < ApplicationController
   post '/create' do
 
     authorization_check
+
+    puts params
+    puts '-----'
+
+    user_wants_item = params.has_key?('wants_item')
+    user_has_item = params.has_key?('has_item')
+
+    puts user_has_item
+    puts user_wants_item
+
+    puts '-----'
+
     @message = ''
 
     @item = ItemsModel.new
     @item.userid = session[:current_user].id
+    @item.type = params[:type] == "1" ##
     @item.title = params[:title]
     @item.description = params[:description]
     @category = CategoriesModel.new
@@ -42,6 +55,7 @@ class ItemsController < ApplicationController
   end
 
   ## update (edit) items on the list individually. Bonus -> enhance UI via AJAX?
+
   get '/edit/:id' do
 
     authorization_check
@@ -72,6 +86,7 @@ class ItemsController < ApplicationController
   end
 
   ## delete list record
+
   post '/delete' do
 
     authorization_check
@@ -84,5 +99,6 @@ class ItemsController < ApplicationController
     @message = 'has been sucessfully removed from your list!'
     erb :item_notification
   end
+
 
 end
