@@ -3,7 +3,8 @@
 }
 html, body {
   width: 100%;
-  min-height: auto;
+  min-height: 100%;
+  height: 100%;
   margin-top:0px;
   margin-right:0px;
   margin-bottom:0px;
@@ -11,48 +12,10 @@ html, body {
   background-color: rgb(255, 255, 255);
 }
 
-/*BELOW IS CSS FOR WELCOME PAGE*/
-/*.welcometext {
-  font-family: Syncopate;
-  font-size: 2vw;
-  color: gray;
-  margin-top: 17%;
-  margin-bottom:-20px;
-  margin-left: 2%;
-  z-index:99;
-  position: absolute;
-  /*display: none;*/
-/*}*/
-
-
-/*BELOW IS TWO LINES FOR WELCOME PAGE, MAYBE WON'T USE*/
-/*.lines{
-  background-color: rgb(241, 54, 54);
-  height: 1px;
-  width: 100%;
-  border: solid 1px rgb(241, 54, 54);
-  opacity: .3;
-  position: absolute;
-  margin-left:;
-  margin-top: 19%;
-}
-
-.lines1{
-  background-color: rgb(241, 54, 54);
-  height: 1px;
-  width: 100%;
-  margin-bottom:-100px;
-  border: solid 1px rgb(241, 54, 54);
-  opacity: .3;
-  position: absolute;
-  margin-left:;
-  margin-top: 43%;
-}*/
-
 .photo {
   width: 100%;
   z-index:0;
-  opacity: .6;
+  opacity: .7;
   padding: -1px;
   margin-top:;
   margin-bottom: 0%;
@@ -77,12 +40,28 @@ html, body {
 .want {
   font-size: 2vw;
   color: black;
-  opacity: .5;
+  opacity: .52;
   position: absolute;
   font-family: Syncopate;
   margin-left: 33%;
   margin-top: 18%;
   text-decoration: underline;
+  display: none;
+}
+
+/*.buttonbar {
+  width: 100%;
+  height: 70px;
+  background-color: lightgray;
+  margin-top:-6.4em;
+  margin-bottom:-25%;
+}*/
+
+.button1:hover {
+  background-color: rgba(76, 76, 76, 1);
+}
+.button2:hover {
+  background-color:rgba(76, 76, 76, 1);
 }
 
 .button1 {
@@ -144,7 +123,7 @@ html, body {
 }
 
 .form1 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: Strait;
   width: 90%;
   margin-top: 5%;
@@ -157,7 +136,7 @@ html, body {
 }
 
 .form2 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: Strait;
   width: 90%;
   margin-bottom: 4%;
@@ -169,7 +148,7 @@ html, body {
 }
 
 .form3 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: Strait;
   width: 90%;
   margin-bottom: 4%;
@@ -181,7 +160,7 @@ html, body {
 }
 
 .form4 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   background-color: rgb(227, 73, 73);
   color: white;
   font-family: Strait;
@@ -193,14 +172,18 @@ html, body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-/**/
+.form4:hover {
+  background-color:rgba(76, 76, 76, 1);
+}
+.form6:hover {
+  background-color:rgba(76, 76, 76, 1);
+}
 
 /*.form5 class for erb error & login success messages*/
 
 .form5 {
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.5vw;
   background-color: rgb(227, 73, 73);
   color: white;
   font-family: Strait;
@@ -244,17 +227,20 @@ html, body {
   padding-right: 30px;
   text-decoration: none;
 }
+.logout:hover {
+  background-color:rgba(76, 76, 76, 1);
+}
 
 .form6 {
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.5vw;
   background-color: rgb(227, 73, 73);
   color: white;
   font-family: Strait;
-  width: 30%;
-  margin-top:;
+  width: 30% ;
+  margin-top:-2%;
   margin-bottom: 5%;
-  margin-left:35%;
+  margin-left:34.5%;
   border: 0;
   border: none;
   padding-top: 15px;
@@ -291,8 +277,12 @@ html, body {
 .itemsform {
   width: 40%;
   margin-left: 30%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   background-color: rgba(19, 0, 0, 0.05);
+}
+
+.itemform {
+  display: none;
 }
 
 .btn {
@@ -301,7 +291,7 @@ html, body {
 }
 
 .itemsform1 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: Strait;
   width: 60%;
   height: 100%;
@@ -316,7 +306,7 @@ html, body {
 }
 
 .itemsform2 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: Strait;
   width: 60%;
   height: 100%;
@@ -330,7 +320,7 @@ html, body {
 }
 
 .itemsform3 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: Strait;
   width: 60%;
   height: 100%;
@@ -344,7 +334,7 @@ html, body {
 }
 
 .itemsform4 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: Strait;
   width: 60%;
   height: 100%;
@@ -358,7 +348,7 @@ html, body {
 }
 
 .itemsform5 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: Strait;
   width: 60%;
   height: 100%;
@@ -372,15 +362,34 @@ html, body {
 }
 
 .itemsform6 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: Strait;
   width: 60%;
   height: 100%;
-  background-color: rgba(0, 0, 0,);
+  background-color: rgba(0, 0, 0);
   border: none;
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 2%;
   margin-left: 20%;
-  margin-bottom: 5%;
+  margin-bottom:5%;
 }
+
+#menu1 {
+  font-size: 1.5vw;
+  font-family: Strait;
+  width: 286%;
+  height:;
+  background-color: rgb(227, 73, 73);
+  border: none;
+  border-radius: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  margin-left: 36%;
+  margin-bottom: 10%;
+  margin-top: -5%;
+}
+ .dropdown {
+   margin-left: 35%;
+ }
