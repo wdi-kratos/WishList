@@ -35,6 +35,7 @@ html, body {
   height: auto;
   margin-left: 26%;
   margin-bottom: 20%;
+  display: none;
 }
 
 .want {
@@ -49,17 +50,10 @@ html, body {
   display: none;
 }
 
-/*.buttonbar {
-  width: 100%;
-  height: 70px;
-  background-color: lightgray;
-  margin-top:-6.4em;
-  margin-bottom:-25%;
-}*/
-
 .button1:hover {
   background-color: rgba(76, 76, 76, 1);
 }
+
 .button2:hover {
   background-color:rgba(76, 76, 76, 1);
 }
@@ -106,6 +100,7 @@ html, body {
   font-family: Strait;
   text-align: center;
   font-size: 4vw;
+  padding-top: 3%;
 }
 
 .signup2 {
@@ -172,9 +167,11 @@ html, body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .form4:hover {
   background-color:rgba(76, 76, 76, 1);
 }
+
 .form6:hover {
   background-color:rgba(76, 76, 76, 1);
 }
@@ -190,7 +187,7 @@ html, body {
   width: 30%;
   margin-top:;
   margin-bottom: 5%;
-  margin-left:41%;
+  margin-left:43%;
   border: 0;
   border: none;
   padding-top: 15px;
@@ -227,6 +224,7 @@ html, body {
   padding-right: 30px;
   text-decoration: none;
 }
+
 .logout:hover {
   background-color:rgba(76, 76, 76, 1);
 }
@@ -249,6 +247,7 @@ html, body {
   padding-right: 30px;
   text-decoration: none;
 }
+
 .form7 {
   text-align: center;
   font-size: 1.5vw;
@@ -259,6 +258,25 @@ html, body {
   margin-top:3%;
   margin-bottom: 5%;
   margin-left:20%;
+  border: 0;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+.form8 {
+  text-align: center;
+  font-size: 1.5vw;
+  background-color: rgb(227, 73, 73);
+  color: white;
+  font-family: Strait;
+  width: 60%;
+  margin-top:3%;
+  margin-bottom: 5%;
+  margin-left:39%;
   border: 0;
   border: none;
   padding-top: 15px;
@@ -441,15 +459,16 @@ html, body {
   background-color:rgba(76, 76, 76, 1);
 }
 
- .dropdown {
+.dropdown {
    margin-left: 35%;
  }
- .open>.dropdown-menu {
-    background-color: rgb(227, 73, 73);
-    color: white;
-    display: block;
-    margin-left: 70%;
-    margin-top: -11%;
-    font-family: Strait;
-    font-size: 1.5vw;
+ 
+.open>.dropdown-menu {
+  background-color: rgb(227, 73, 73);
+  color: white;
+  display: block;
+  margin-left: 70%;
+  margin-top: -11%;
+  font-family: Strait;
+  font-size: 1.5vw;
 }
