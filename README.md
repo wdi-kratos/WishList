@@ -24,6 +24,14 @@ Stakeholders = Chris Kim, Tristan Marshall & GA instructors
 * Postgres
 * Bootstrap
 
+#### How to install and run
+* Clone this repository.
+* Navigate to the directory it is stored in.
+* bundle the Gemfile
+* Rub the migration.sql file in Postgres to generate the required databases.
+* Run "bundle exec rackup" in your terminal
+* Browse to localhost:9292
+
 ### User Stories
 
 **High Priority: (required project scope)**
