@@ -16,45 +16,96 @@
     <a class="form6" href='/items/create'>create new item</a>
     <div class="formbox1">
 
+        <h2 class="signup">wants</h2>
+        <div class="wantsbox">
+        <table>
 
-      <h2 class="signup">wants</h2>
-      <div class="wantsbox">
+          <thead>
+            <th><u>Title</u></th>
+            <th><u>Description</u></th>
+            <th><u>Modify?</u></th>
+          </thead>
 
-        <% if @wants.nil? == false %>
-        <% @wants.each do |want| %>
-          <li><%= want.title.to_s %></li>
-        <% end %>
-        <% end %>
+          <tbody>
+            <% if @wants.nil? == false %>
+            <% @wants.each do |want| %>
+            <tr>
+                <td>
+                  <%= want.title.to_s %>
+                </td>
+                <td>
+                  <%= want.description.to_s %>
+                </td>
+                <td>
+                  <a href="/items/edit/<%= want.id %>">Edit</a>
+                </td>
+            </tr>
+            <% end %>
+            <% end %>
+          </tbody>
+        </table>
+        </div>
 
+        <h2 class="signup">haves</h2>
+        <div class="havesbox">
+        <table>
+          <thead>
+            <th><u>Title</u></th>
+            <th><u>Description</u></th>
+            <th><u>Modify?</u></th>
+          </thead>
 
-      </div>
+          <tbody>
+            <% if @haves.nil? == false %>
+            <% @haves.each do |has| %>
+            <tr>
+                <td>
+                  <%= has.title.to_s %>
+                </td>
+                <td>
+                  <%= has.description.to_s %>
+                </td>
+                <td>
+                  <a href="/items/edit/<%= has.id %>">Edit</a>
+                </td>
+            </tr>
+            <% end %>
+            <% end %>
+          </tbody>
+        </table>
+        </div>
 
-      <h2 class="signup">haves</h2>
-      <div class="havesbox">
-        <% if @haves.nil? == false %>
-        <% @haves.each do |has| %>
-          <li class="ruby"><%= has.title.to_s + " / " + has.description.to_s %></li>
-        <% end %>
-        <% end %>
+        <h2 class="signup">barter with</h2>
+        <div class="matchesbox">
+        <table>
+          <thead>
+            <th><u>Title</u></th>
+            <th><u>Description</u></th>
+            <th><u>Email</u></th>
+          </thead>
 
-
-      </div>
-
-      <h2 class="signup">barter with</h2>
-        <% if @matches.nil? == false %>
-        <% @matches.each do |match| %>
-          <li><a href='mailto:<%= match[:email] %>'><%= match[:email] %></a> has <strong><%= match[:title] %></strong></li>
-        <% end %>
-        <% end %>
-      <div class="matchesbox">
-
-
-
-
-      </div>
-
-
+          <tbody>
+            <% if @matches.nil? == false %>
+            <% @matches.each do |match| %>
+            <tr>
+                <td>
+                  <%= match[:title] %>
+                </td>
+                <td>
+                  <%= match[:description] %>
+                </td>
+                <td>
+                  <a href='mailto:<%= match[:email] %>'><%= match[:email] %></a>
+                </td>
+            </tr>
+            <% end %>
+            <% end %>
+          </tbody>
+        </table>
+        </div>
 
     </div>
   </body>
+  
+  <footer></footer>
 </html>

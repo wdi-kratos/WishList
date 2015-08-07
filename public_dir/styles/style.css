@@ -201,7 +201,7 @@ html, body {
 
 .formbox1 {
   width: 60%;
-  height: 110%;
+  height: 120%;
   background-color: rgba(19, 0, 0, 0.05);
   margin-left: 20%;
   margin-bottom: 10%;
@@ -473,8 +473,10 @@ html, body {
   font-size: 1.5vw;
 }
 
-.ruby {
+table {
+  padding: 30px;
+  width: 100%;
   font-family: Strait;
-  text-align: center;
+  text-align: left;
   color: gray;
 }
