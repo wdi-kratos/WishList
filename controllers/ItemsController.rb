@@ -112,7 +112,7 @@ class ItemsController < ApplicationController
     @attribute.location = params[:location]
       @attribute.save
 
-    @message = 'has been sucessfully modified from your list!'
+    @message = 'sucessfully modified from your list!'
     @update = 'Updated'
     erb :item_notification
 
