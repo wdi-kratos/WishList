@@ -21,8 +21,9 @@ Stakeholders = Chris Kim, Tristan Marshall & GA instructors
 * Inkscape
 * SQL
 * Ruby
-* Postgres
+* PostgreSQL
 * Bootstrap
+
 
 #### How to install and run
 * Clone this repository.
@@ -55,6 +56,4 @@ Stakeholders = Chris Kim, Tristan Marshall & GA instructors
 **Wireframe**
 ![Image of website](wireframe.jpg)
 ![Image of dashboard](dashboard.jpg)
-
-**Models**
-![Image of database](database.png)
+![Image of Database design](http://i.imgur.com/aOGiBK5.jpg)
