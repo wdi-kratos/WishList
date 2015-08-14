@@ -4,7 +4,7 @@ WDI project #2 / WishList
 Concept:
 WishList is a web application that matches users wants and haves with other users haves and wants. WishList allows users to create a list of 'wants' and 'haves'. The user creates these items and applies a category and a list of attributes to the items. If the users items attributes matches a different users items attributes, that item is placed in the match section of the users involved.
 
-Stakeholders = Chris Kim, Tristan Marshall & GA instructors
+Stakeholders = Chris Kim, Tristan Marshall
 
 ![alt image](http://i.imgur.com/Gur32FC.jpg)
 
