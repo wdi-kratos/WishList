@@ -8,4 +8,5 @@ class HomeController < ApplicationController
     erb :not_authenticated
   end
 
+
 end
